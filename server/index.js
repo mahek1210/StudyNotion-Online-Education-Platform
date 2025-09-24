@@ -11,6 +11,7 @@ const cors = require("cors");
 const { cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
+const path  = require("path");
 
 dotenv.config();
 const PORT = process.env.PORT || 4000;
@@ -21,6 +22,7 @@ cloudinaryConnect();
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, '../build')));
 // app.use(
 // 	cors({
 // 		origin: "*",
@@ -50,7 +52,11 @@ app.use("/api/v1/course", courseRoutes);
 app.use("/api/v1/payment", paymentRoutes);
 app.use("/api/v1/reach", contactUsRoute);     
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 // Testing the server
+
 app.get("/", (req, res) => {
 	return res.json({
 		success: true,
