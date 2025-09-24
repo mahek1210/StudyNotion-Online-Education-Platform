@@ -19,7 +19,7 @@ import axios from "axios";
 // Create axios instance with default configuration
 
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000/api/v1", // ✅ Backend URL
+  baseURL: "https://studynotion-online-education-platform.onrender.com/api/v1", // ✅ Backend URL
   withCredentials: true, // ✅ Allow sending cookies/auth
 });
 
