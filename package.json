@@ -41,7 +41,7 @@
   "start": " react-scripts start",
   "server": "npm run dev --prefix server",
   "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\"",
-  "build":"npm install && npm install --preix server && npm run build --prefix server && react-scripts build"
+  "build":"npm install && npm install --preix server && npm run build"
 },
 
   "eslintConfig": {
