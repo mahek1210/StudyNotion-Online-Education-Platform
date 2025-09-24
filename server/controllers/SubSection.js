@@ -1,8 +1,8 @@
 const SubSection = require('../models/SubSection.js');
 const Section = require('../models/Section.js');
 const imageUploader = require('../utils/imageUpaloder.js');
-const { getVideoDurationInSeconds } = require('get-video-duration.js');
-const getVideoDuration = require("get-video-duration.js");
+const { getVideoDurationInSeconds } = require('get-video-duration');
+const getVideoDuration = require("get-video-duration");
 const { convertSecondsToDuration } = require("../utils/secToDuration.js");
 const Course = require('../models/Courses.js');
 
