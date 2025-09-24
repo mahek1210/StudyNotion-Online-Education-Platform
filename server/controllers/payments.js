@@ -203,7 +203,7 @@
 
 // payments.js (Stripe version)
 const Course = require("../models/Courses.js");
-const User = require("../models/User,js");
+const User = require("../models/User.js");
 const mailSender = require("../utils/MailSender.js");
 const mongoose = require("mongoose");
 const {
