@@ -1,8 +1,8 @@
-const Profile = require('../models/Profile');
-const User = require('../models/User');
-const Course = require('../models/Courses');
-const CourseProgress = require('../models/CourseProgress');
-const  uploadImageToCloudinary  = require('../utils/imageUpaloder');
+const Profile = require('../models/Profile.js');
+const User = require('../models/User.js');
+const Course = require('../models/Courses.js');
+const CourseProgress = require('../models/CourseProgress.js');
+const  uploadImageToCloudinary  = require('../utils/imageUpaloder.js');
 
 // Helper function to convert seconds to duration
 const convertSecondsToDuration = (totalSeconds) => {

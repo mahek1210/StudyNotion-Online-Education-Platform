@@ -308,9 +308,9 @@
 
 
 const mongoose = require("mongoose");
-const Section = require('../models/Section');
-const Course = require('../models/Courses');
-const User = require('../models/User');
+const Section = require('../models/Section.js');
+const Course = require('../models/Courses.js');
+const User = require('../models/User.js');
 
 exports.createSection = async (req, res) => {
     try {

@@ -202,16 +202,16 @@
 
 
 // payments.js (Stripe version)
-const Course = require("../models/Courses");
-const User = require("../models/User");
-const mailSender = require("../utils/MailSender");
+const Course = require("../models/Courses.js");
+const User = require("../models/User,js");
+const mailSender = require("../utils/MailSender.js");
 const mongoose = require("mongoose");
 const {
   courseEnrollmentEmail,
-} = require("../mail/templates/courseEnrollmentEmail");
-const { paymentSuccessEmail } = require("../mail/templates/paymentSuccessEmail");
-const CourseProgress = require("../models/CourseProgress");
-const stripe = require("../config/stripe");
+} = require("../mail/templates/courseEnrollmentEmail.js");
+const { paymentSuccessEmail } = require("../mail/templates/paymentSuccessEmail.js");
+const CourseProgress = require("../models/CourseProgress.js");
+const stripe = require("../config/stripe.js");
 
 // -----------------------------
 // Create Payment Intent (instead of Razorpay order)

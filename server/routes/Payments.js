@@ -30,9 +30,9 @@ const {
   createPaymentIntent,        // Stripe: create a PaymentIntent
   confirmPaymentAndEnroll,    // Stripe: confirm + enroll
   sendPaymentSuccessEmail,    // Send success email
-} = require("../controllers/payments");
+} = require("../controllers/payments.js");
 
-const { auth, isInstructor, isStudent, isAdmin } = require("../middleware/auth");
+const { auth, isInstructor, isStudent, isAdmin } = require("../middleware/auth.js");
 
 // Create a new PaymentIntent
 router.post("/create-payment-intent", auth, isStudent, createPaymentIntent);

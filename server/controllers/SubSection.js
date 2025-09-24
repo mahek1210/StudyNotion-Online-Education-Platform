@@ -1,9 +1,9 @@
-const SubSection = require('../models/SubSection');
-const Section = require('../models/Section');
-const imageUploader = require('../utils/imageUpaloder');
-const { getVideoDurationInSeconds } = require('get-video-duration');
-const { convertSecondsToDuration } = require("../utils/secToDuration");
-const Course = require('../models/Courses');
+const SubSection = require('../models/SubSection.js');
+const Section = require('../models/Section.js');
+const imageUploader = require('../utils/imageUpaloder.js');
+const { getVideoDurationInSeconds } = require('get-video-duration.js');
+const { convertSecondsToDuration } = require("../utils/secToDuration.js");
+const Course = require('../models/Courses.js');
 
 
 // exports.createSubSection = async (req, res) => {

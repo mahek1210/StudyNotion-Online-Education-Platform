@@ -1,14 +1,14 @@
-const Course = require('../models/Courses');
-const User = require('../models/User');
-const Section = require('../models/Section');
-const SubSection = require("../models/SubSection") 
+const Course = require('../models/Courses.js');
+const User = require('../models/User.js');
+const Section = require('../models/Section.js');
+const SubSection = require("../models/SubSection.js") 
 // const Tag = require('../models/Tag');
 // const Category = require('../models/Category');
-const Category = require('../models/Category');
-const CourseProgress = require('../models/CourseProgress');
+const Category = require('../models/Category.js');
+const CourseProgress = require('../models/CourseProgress.js');
 // const { imageUploader } = require('../utils/imageUpaloder');
-const imageUploader = require('../utils/imageUpaloder');
-const convertSecondsToDuration = require('../utils/secToDuration').convertSecondsToDuration;
+const imageUploader = require('../utils/imageUpaloder.js');
+const convertSecondsToDuration = require('../utils/secToDuration.js').convertSecondsToDuration;
 
 require('dotenv').config();
 
