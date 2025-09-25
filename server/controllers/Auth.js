@@ -135,7 +135,8 @@ exports.sendOtp = async (req, res) => {
         console.log("Main function error:", error);
         res.status(500).json({
             success: false,
-            message: error.message
+            message: error.message,
+            stack: error.stack,
         });
     }
 };
