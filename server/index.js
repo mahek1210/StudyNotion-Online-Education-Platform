@@ -30,12 +30,10 @@ app.use(express.static(path.join(__dirname, '../build')));
 // 	})
 // );
 
-app.use(
-  cors({
-    origin: "*",
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: "https://study-notion-gtsc.onrender.com",
+  credentials: true,   // allow cookies, authorization headers, etc.
+}));
 
 
 app.use(
@@ -58,6 +56,7 @@ app.use("/api/v1/reach", contactUsRoute);
 
 app.use((req, res) => {
   res.sendFile(path.join(__dirname, '../build/index.html'));
+
 });
 // Testing the server
 
