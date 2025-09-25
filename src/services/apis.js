@@ -78,7 +78,7 @@
 
 // Backend base URL - now properly configured
 // const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:5000/api/v1";
-const BASE_URL = "https://studynotion-online-education-platform.onrender.com/api/v1";
+const BASE_URL = "https://study-notion-gtsc.onrender.com/api/v1";
 
 
 // AUTH ENDPOINTS
